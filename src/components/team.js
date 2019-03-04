@@ -1,78 +1,108 @@
-import { Image } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
+import PropTypes from 'prop-types';
+import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
+import { withIntl } from '../i18n';
 
-import TeamMemberOne from '../img/team/markus-loinig.jpg'
-import TeamMemberTwo from '../img/team/ivan-vican.jpg'
-import TeamMemberThree from '../img/team/3.jpg'
+import TeamMemberOne from '../images/team/markus-loinig-3.jpg';
+import TeamMemberTwo from '../images/team/ivan-vican-3.jpg';
+import TeamMemberThree from '../images/team/ivan-fabijanovic-2.jpg';
 
-const Team = () => (
-  <section id="team" class="padd-section text-center wow fadeInUp">
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>Team Member</h2>
-        <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+const Team = ({ t }) => (
+  <section id="team" className="padd-section text-center wow fadeInUp">
+    <div className="container">
+      <div className="section-title text-center">
+        <h2>{t('Team_Title')}</h2>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-
-        <div class="col-sm-6 col-md-4">
-          <div class="team-block bottom">
-            <img src={TeamMemberOne} class="img-responsive" alt="img" />
-            <div class="team-content">
-              <ul class="list-unstyled">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+    <div className="container">
+      <div className="row">
+        <div className="col-sm-12 col-md-6 col-lg-4">
+          <div className="team-block bottom">
+            <div className="team-header">
+              <span>{t('Team_Person1_Title')}</span>
+              <h4>{t('Team_Person1_Name')}</h4>
+            </div>
+            <img src={TeamMemberOne} className="img-responsive" alt="img" />
+            <div className="team-content">
+              <div className="team-bio">
+                <span>{t('Team_Person1_Bio')}</span>
+              </div>
+              <ul className="list-unstyled">
+                <li>
+                  <OutboundLink
+                    href="https://linkedin.com/in/markus-w-loinig-b31aa6b5"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Read more on Marcus LinkedIn"
+                  >
+                    <i className="fa fa-linkedin" />
+                  </OutboundLink>
+                </li>
               </ul>
-              <span>Chief Executive Officer</span>
-              <h4>Markus Loinig</h4>
             </div>
           </div>
         </div>
 
-       <div class="col-sm-6 col-md-4">
-          <div class="team-block bottom">
-            <img src={TeamMemberTwo} class="img-responsive" alt="img" />
-            <div class="team-content">
-              <ul class="list-unstyled">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <div className="col-sm-12 col-md-6 col-lg-4">
+          <div className="team-block bottom">
+            <div className="team-header">
+              <span>{t('Team_Person2_Title')}</span>
+              <h4>{t('Team_Person2_Name')}</h4>
+            </div>
+            <img src={TeamMemberTwo} className="img-responsive" alt="img" />
+            <div className="team-content">
+              <div className="team-bio">
+                <span>{t('Team_Person2_Bio')}</span>
+              </div>
+              <ul className="list-unstyled">
+                <li>
+                  <OutboundLink
+                    href="https://www.linkedin.com/in/ivanvican/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Read more on Ivan Vican LinkedIn"
+                  >
+                    <i className="fa fa-linkedin" />
+                  </OutboundLink>
+                </li>
               </ul>
-              <span>Head of Data Science</span>
-              <h4>Ivan Vican</h4>
             </div>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-4">
-          <div class="team-block bottom">
-            <img src={TeamMemberThree} class="img-responsive" alt="img" />
-            <div class="team-content">
-              <ul class="list-unstyled">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <div className="col-sm-12 col-md-6 col-lg-4">
+          <div className="team-block bottom">
+            <div className="team-header">
+              <span>{t('Team_Person3_Title')}</span>
+              <h4>{t('Team_Person3_Name')}</h4>
+            </div>
+            <img src={TeamMemberThree} className="img-responsive" alt="img" />
+            <div className="team-content">
+              <div className="team-bio">
+                <span>{t('Team_Person3_Bio')}</span>
+              </div>
+              <ul className="list-unstyled">
+                <li>
+                  <OutboundLink
+                    href="https://linkedin.com/in/ifabijanovic"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Read more on Ivan Fabijanovic LinkedIn"
+                  >
+                    <i className="fa fa-linkedin" />
+                  </OutboundLink>
+                </li>
               </ul>
-              <span>Head of Technology</span>
-              <h4>Ivan Fabijanović</h4>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
-)
+);
 
 Team.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  t: PropTypes.func.isRequired,
+};
 
-Team.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Team
+export default withIntl()(Team);

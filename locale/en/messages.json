@@ -1,0 +1,74 @@
+{
+  "Page_Title": "Senzoro | Instant machine status tracking",
+  "Page_Description": "Senzoro uses smartphones to instantly detect up- and downtimes of machines. It works for all machine types and everything is implemented within one business day. Our approach works wirelessly and production can continue without interruption during the set-up process.",
+  "Page_Keywords": "Artificial Intelligence, machine learning, IOT, machine status tracking, task force equipment, instant sensors",
+
+  "Header_Link_Home": "Home",
+  "Header_Link_About": "Benefits",
+  "Header_Link_Features": "Features",
+  "Header_Link_Team": "Team",
+  "Header_Link_Contact": "Contact",
+
+  "Navigation_Button_Home": "Back to Home",
+
+  "Hero_Title": "Meet Senzoro",
+  "Hero_Subtitle": "Your AI Powered Assistant for Instant Machine Status Tracking.",
+  "Hero_Button_ContactUs": "Contact us",
+  "Hero_Button_HowItWorks": "How it works",
+
+  "HowItWorks_Title": "Spending Weeks Identifying a Factory's Productivity Problem?",
+  "HowItWorks_Subtitle": "We have the solution: On demand machine status tracking.",
+  "HowItWorks_Item1_Title": "Real-time machine status",
+  "HowItWorks_Item1_Subtitle": "Our AI transfers the machine status to the cloud instantly. You can check your machine status from anywhere in the world.",
+  "HowItWorks_Item2_Title": "Easy to install",
+  "HowItWorks_Item2_Subtitle": "It takes only a few seconds to get Senzoro up and running: Place a smartphone on top of each machine and all is set.",
+  "HowItWorks_Item3_Title": "Simple to scale",
+  "HowItWorks_Item3_Subtitle": "Tracking is possible for up to 100 000 machines. Adding and removing machines from the tracking process just takes seconds.",
+  "HowItWorks_ReadMode": "Read more",
+
+  "Features_Title": "Senzoro is Different. Here’s Why:",
+  "Features_Subtitle": "We combine machine learning with powerful smartphone hardware.",
+  "Features_Item1_Title": "Fast Results",
+  "Features_Item1_Subtitle": "Putting a smartphone on top of a machine just takes seconds. This is why Senzoro only needs a few hours to create an overview of up and downtimes for an entire factory.",
+  "Features_Item2_Title": "Reliable Hardware",
+  "Features_Item2_Subtitle": "We use regular smartphones off the shelve. Thus, the hardware we use complies with all relevant hard- and software regulations to ensure, no interference with production equipment takes place.",
+  "Features_Item3_Title": "Non-intrusive",
+  "Features_Item3_Subtitle": "Our approach works wirelessly and production can continue without interruption during the set-up process.",
+  "Features_Item4_Title": "Privacy",
+  "Features_Item4_Subtitle": "Senzoro processes all sensor data on the smartphone itself thanks to inbuilt processing power. No critical sensor data ever leaves the smartphone; only the machine status (on/off) is sent to the cloud.",
+
+  "Video_Title": "Curious to See How it Works?",
+
+  "Team_Title": "Meet the Team",
+  "Team_Person1_Title": "Chief Executive Officer",
+
+  "Team_Person1_Name": "Markus Loinig",
+  "Team_Person1_Bio": "Markus knows the operations side of the automotive industry inside out. He worked for Daimler AG in a variety of operations related positions before taking on a new challenge at Booz & Company. There, he encountered a lot of complex situations with different automotive manufacturers and suppliers and had to find efficient solutions. This is how the idea for Senzoro was born, which is now a new and exciting chapter for himself and his team.",
+  "Team_Person2_Title": "Head of Data Science",
+  "Team_Person2_Name": "Ivan Vican",
+  "Team_Person2_Bio": "Ivan has vast experience in the areas of audioanalysis, algorithms and data engineering. Before joining Senzoro, he was part of the team around the highly praised smartphone compatible device 'Shell by Bellabeat', which is a baby heartbeat monitor app, that was ranked #1 in the US app store. He holds a PhD candidacy since 2016.",
+  "Team_Person3_Title": "Head of Technology",
+  "Team_Person3_Name": "Ivan Fabijanović",
+  "Team_Person3_Bio": "Ivan is a software engineer and system architect with 8+ years of working experience. He is an expert in iOS systems with strong knowledge of web and backend technologies. He worked together with Ivan Vican on the much-lauded device 'Shell by Bellabeat' and was the iOS Lead Engineer for the #1 ranked app (US store).",
+
+  "Contact_Title": "Get in Touch to Book a Call",
+  "Contact_Subtitle": "",
+  "Contact_Form_RequiredField": "Please fill in this required field",
+  "Contact_Form_PleaseEnterValidEmail": "Please enter a valid email",
+  "Contact_Form_YourName": "Your Name",
+  "Contact_Form_YourEmail": "Your Email",
+  "Contact_Form_Subject": "Subject",
+  "Contact_Form_Message": "Message",
+  "Contact_Form_Button": "Send message",
+
+  "Footer_Title": "Senzoro",
+  "Footer_Impressum": "Senzoro is a fast-growing company which has developed a completely new approach for machine status tracking combining recent advancements in Artificial Intelligence, Machine Learning and smartphone hardware.",
+  "Footer_Link_Impressum": "Impressum",
+  "Footer_Link_PrivacyPolicy": "Privacy Policy",
+
+  "404_Title": "404",
+  "404_Message": "You just hit a route that doesn't exist... the sadness.",
+
+  "ThankYou_Title": "Your message has been sent.",
+  "ThankYou_Message": "Thank you for contacting Senzoro. We will respond to you as soon as possible."
+}

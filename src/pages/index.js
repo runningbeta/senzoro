@@ -1,34 +1,40 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import i18n from "i18next"
-import Backend from "i18next-xhr-backend"
-import LanguageDetector from "i18next-browser-languagedetector"
-import { reactI18nextModule } from "react-i18next"
+import withIntl from '../i18n/withIntl';
 
-import Layout from '../components/layout'
-import Image from '../components/image'
-import SEO from '../components/seo'
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
-import Hero from '../components/hero'
-import ThreeColumn from '../components/threeColumn'
-import Features from '../components/features'
-import Video from '../components/video'
-import Team from '../components/team'
+import Hero from '../components/hero';
+import HowItWorks from '../components/howItWorks';
+import Features from '../components/features';
+import Video from '../components/video';
+import Team from '../components/team';
 import Contact from '../components/contact';
+import Footer from '../components/footer';
 
-const IndexPage = () => (
+const IndexPage = ({ t, ...context }) => (
   <React.Fragment>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title={t('Page_Title')}
+      description={t('Page_Description')}
+      keywords={t('Page_Keywords').split(', ')}
+    />
     <Hero />
-    <Layout>
-      <ThreeColumn />
+    <Layout {...context}>
+      <HowItWorks />
       <Features />
-      <Video />
+      <Video url="https://youtu.be/MK2tjt1NXog" />
       <Team />
       <Contact />
     </Layout>
+    <Footer siteTitle="Senzoro" />
   </React.Fragment>
-)
+);
 
-export default IndexPage
+IndexPage.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+
+export default withIntl()(IndexPage);

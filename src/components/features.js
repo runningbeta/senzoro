@@ -1,103 +1,72 @@
-import { Image } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+import _ from 'lodash';
 
-import PaintPalette from '../img/svg/paint-palette.svg'
-import Vector from '../img/svg/vector.svg'
-import DesignTool from '../img/svg/design-tool.svg'
-import Code from '../img/svg/code.svg'
-import Pixel from '../img/svg/pixel.svg'
-import Asteroid from '../img/svg/asteroid.svg'
-import CloudComputing from '../img/svg/cloud-computing.svg'
+import { withIntl } from '../i18n';
 
-const Features = ({ siteTitle }) => (
-    <section id="features" class="padd-section text-center wow fadeInUp">
+import Item1 from '../images/icons/features_fast results_g5276_2349621.svg';
+import Item2 from '../images/icons/features_non intrusive_smartphone_1178094.svg';
+import Item3 from '../images/icons/features_privacy_11_3874405.svg';
+import Item4 from '../images/icons/features_reliable hardware_44_1490745.svg';
 
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>Amazing Features.</h2>
-        <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+function partition(items, size) {
+  return _.values(_.groupBy(items, (item, i) => Math.floor(i / size)));
+}
+
+const Features = ({ t }) => {
+  const features = [
+    {
+      icon: Item1,
+      title: t('Features_Item1_Title'),
+      subtitle: t('Features_Item1_Subtitle'),
+    },
+    {
+      icon: Item2,
+      title: t('Features_Item2_Title'),
+      subtitle: t('Features_Item2_Subtitle'),
+    },
+    {
+      icon: Item3,
+      title: t('Features_Item3_Title'),
+      subtitle: t('Features_Item3_Subtitle'),
+    },
+    {
+      icon: Item4,
+      title: t('Features_Item4_Title'),
+      subtitle: t('Features_Item4_Subtitle'),
+    },
+  ];
+
+  return (
+    <section id="features" className="padd-section text-center wow fadeInUp">
+      <div className="container">
+        <div className="section-title text-center">
+          <h2>{t('Features_Title')}</h2>
+          <p className="separator">{t('Features_Subtitle')}</p>
+        </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src={PaintPalette} alt="img" class="img-fluid" />
-            <h4>creative design</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+      <div className="container">
+        {partition(features, 4).map(chunk => (
+          <div key={`${chunk[0].title}chunk`} className="row">
+            {chunk.map(f => (
+              <div key={f.title} className="col-md-6 col-lg-3">
+                <div className="feature-block">
+                  <img src={f.icon} alt="img" className="img-fluid" />
+                  <h4>{f.title}</h4>
+                  <p>{f.subtitle}</p>
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src={Vector} alt="img" class="img-fluid" />
-            <h4>Retina Ready</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src={DesignTool} alt="img" class="img-fluid" />
-            <h4>easy to use</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src={Asteroid} alt="img" class="img-fluid" />
-            <h4>Free Updates</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src={Asteroid} alt="img" class="img-fluid" />
-            <h4>Free Updates</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src={CloudComputing} alt="img" class="img-fluid" />
-            <h4>App store support</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src={Pixel} alt="img" class="img-fluid" />
-            <h4>Perfect Pixel</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="feature-block">
-            <img src={Code} alt="img" class="img-fluid" />
-            <h4>clean codes</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-          </div>
-        </div>
-
+        ))}
       </div>
-    </div>
-  </section>
-)
+    </section>
+  );
+};
 
 Features.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  t: PropTypes.func.isRequired,
+};
 
-Features.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Features
+export default withIntl()(Features);

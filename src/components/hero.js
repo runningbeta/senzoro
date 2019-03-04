@@ -1,26 +1,29 @@
-import { Image } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withIntl } from '../i18n';
 
-import heroImg from '../img/hero-img.png'
+import heroImg from '../images/hero-img.png';
 
-const Hero = ({ siteTitle }) => (
-  <section id="hero" class="wow fadeIn">
-    <div class="hero-container">
-      <h1>Welcome to eStartups</h1>
-      <h2>Elegant Bootstrap Template for Startups, Apps &amp; more...</h2>
+const Hero = ({ t }) => (
+  <section id="hero" className="wow fadeIn">
+    <div className="hero-container">
+      <h1>{t('Hero_Title')}</h1>
+      <h2>{t('Hero_Subtitle')}</h2>
+      <div>
+        <a href="#contact" className="btn-get-started scrollto">
+          {t('Hero_Button_ContactUs')}
+        </a>
+        <a href="#get-started" className="btn-get-started outline scrollto">
+          {t('Hero_Button_HowItWorks')}
+        </a>
+      </div>
       <img src={heroImg} alt="Hero Imgs" />
-      <a href="#get-started" class="btn-get-started scrollto">Contact Us</a>
     </div>
   </section>
-)
+);
 
 Hero.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  t: PropTypes.func.isRequired,
+};
 
-Hero.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Hero
+export default withIntl()(Hero);

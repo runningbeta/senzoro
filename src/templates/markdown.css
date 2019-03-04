@@ -1,0 +1,27 @@
+.markdown {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.markdown h1 {
+  font-family: 'Philosopher', sans-serif;
+  color: #71c55d;
+}
+
+.markdown ul {
+  margin-left: 1.45rem;
+  margin-top: 0;
+}
+
+.markdown ul li {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.markdown blockquote,
+.markdown li,
+.markdown a {
+  word-break: break-word;
+  letter-spacing: 0.5px;
+}

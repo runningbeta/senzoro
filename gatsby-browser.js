@@ -4,10 +4,19 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+import './src/styles/bootstrap.min.css';
+import './src/styles/font-awesome.min.css';
+import './src/styles/style.css';
 
-import "./src/styles/style.css"
-import "./src/styles/bootstrap.min.css"
-import "./src/styles/font-awesome.min.css"
+const onServiceWorkerUpdateReady = () => {
+  const answer = window.confirm(
+    `This application has been updated. ` +
+      `Reload to display the latest version?`
+  );
 
-import "./src/scripts/main.js"
+  if (answer === true) {
+    window.location.reload();
+  }
+};
+
+export default { onServiceWorkerUpdateReady };

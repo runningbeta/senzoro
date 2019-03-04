@@ -1,0 +1,71 @@
+{
+  "Page_Title": "Senzoro | Erfassung von Maschinenlaufzeiten ohne Installationszeiten",
+  "Page_Description": "Senzoro verwendet Smartphones, um Laufzeiten von Maschinen sofort transparent zu machen. Es funktioniert für alle Maschinentypen und die Implementierung dauert nur einen Tag. Unser Ansatz arbeitet drahtlos und die Produktion kann während der Installation ohne Einschränkung fortgesetzt werden",
+  "Page_Keywords": "Künstliche Intelligenz, maschinelles Lernen, Produktionsoptimierung, IOT, Maschinenzustand, Task Force Ausrüstung, Sensorik",
+
+  "Header_Link_Home": "Home",
+  "Header_Link_About": "Vorteile",
+  "Header_Link_Features": "Merkmale",
+  "Header_Link_Team": "Team",
+  "Header_Link_Contact": "Kontakt",
+
+  "Navigation_Button_Home": "Zurück zu Home",
+
+  "Hero_Title": " Senzoro ist da",
+  "Hero_Subtitle": "Ein KI-gestützter Assistent für die sofortige Erfassung von Maschinenlaufzeiten.",
+  "Hero_Button_ContactUs": "Kontakt aufnehmen",
+  "Hero_Button_HowItWorks": "So funktioniert's",
+  "HowItWorks_Title": "Sie möchten Ihre Produktivitätsprobleme schneller identifizieren?",
+  "HowItWorks_Subtitle": "Wir haben die Lösung: Sofortige Transparenz von Maschinenlaufzeiten ohne Installationszeiten.",
+  "HowItWorks_Item1_Title": "Maschinenstatus in Echtzeit",
+  "HowItWorks_Item1_Subtitle": "Unsere KI überträgt den Maschinenstatus sofort in die Cloud. Sie können den Status Ihrer Maschine von überall auf der Welt einsehen.",
+  "HowItWorks_Item2_Title": "Einfach zu installieren",
+  "HowItWorks_Item2_Subtitle": "Es dauert nur wenige Sekunden, um Senzoro zum Laufen zu bringen. Sie müssen lediglich ein Smartphone auf die Maschine legen.",
+  "HowItWorks_Item3_Title": "Einfach Skalierbar",
+  "HowItWorks_Item3_Subtitle": "Senzoro kann bis zu 100 000 Maschinen gleichzeitig erfassen. Das Hinzufügen und Entfernen von Maschinen aus dem Verfolgungsprozess dauert nur wenige Sekunden.",
+  "HowItWorks_ReadMode": "Mehr erfahren",
+
+  "Features_Title": "Senzoro ist anders: Hier sind die Gründe.",
+  "Features_Subtitle": "Wir kombinieren künstliche Intelligenz mit leistungsfähiger Smartphone-Hardware.",
+  "Features_Item1_Title": "Schnelle Ergebnisse",
+  "Features_Item1_Subtitle": "Es dauert nur wenige Sekunden, um ein Smartphone auf eine Maschine zu legen. Deshalb benötigt Senzoro nur wenige Stunden, um Transparenz über Maschinenlaufzeiten in einer gesamten Fabrik zu schaffen.",
+  "Features_Item2_Title": "Zuverlässige Hardware",
+
+  "Features_Item2_Subtitle": "Wir nutzen handelsübliche Smartphones. Alle relevanten Hard- und Software-Vorschriften werden bereits erfüllt, um eine Störung von Produktionsanlagen zu verhindern.",
+  "Features_Item3_Title": "Nicht-Invasiv",
+  "Features_Item3_Subtitle": "Unser Ansatz arbeitet drahtlos und die Produktion kann während des Einrichtungsprozesses ohne Unterbrechung fortgesetzt werden.",
+  "Features_Item4_Title": "Datenschutz",
+  "Features_Item4_Subtitle": "Dank integrierter Rechenleistung der Smartphones, verarbeitet Senzoro alle Sensordaten auf dem Smartphone selbst. Kritischen Sensordaten verlassen niemals das Smartphone, nur der Maschinenstatus (ein/aus) wird an die Cloud übermittelt.",
+
+  "Video_Title": "Neugierig geworden? So funktioniert’s.",
+
+  "Team_Title": "Das Team",
+  "Team_Person1_Title": "Chief Executive Officer",
+  "Team_Person1_Name": "Markus Loinig",
+  "Team_Person1_Bio": "Markus kennt die Operations der Automobilindustrie in- und auswendig. Er arbeitete für die Daimler AG in verschiedenen Positionen, bevor er sich einer neuen Herausforderung bei Booz & Company stellte. Dort traf er auf viele komplexe Situationen mit verschiedenen Automobilherstellern und -zulieferern und musste effiziente Lösungen finden. So entstand die Idee für Senzoro, die nun ein neues und spannendes Kapitel für sich und sein Team darstellt.",
+  "Team_Person2_Title": "Head of Data Science",
+  "Team_Person2_Name": "Ivan Vican",
+  "Team_Person2_Bio": "Ivan hat große Erfahrung in den Bereichen Audioanalyse, Algorithmen und Datenauswertung. Bevor er zu Senzoro kam, war er Teil des Teams um das hochgelobte, Smartphone-kompatible Gerät 'Shell by Bellabeat', eine Baby Herzschlagüberwachungs-App, die im US App Store Platz 1 erreichte. Seit 2016 arbeitet er an seiner Doktorarbeit.",
+  "Team_Person3_Title": "Head of Technology",
+  "Team_Person3_Name": "Ivan Fabijanović",
+  "Team_Person3_Bio": "Ivan ist ein Softwareentwickler und Systemarchitekt mit mehr als 8 Jahren Berufserfahrung. Er ist Experte für iOS-Systeme mit fundierten Kenntnissen in Web- und Backend-Technologien. Er arbeitete mit Ivan Vican am viel gelobten Gerät 'Shell by Bellabeat' zusammen und war der iOS Lead Engineer für die #1 gelistete App (US Store)",
+
+  "Contact_Title": "Vereinbaren Sie ein Gespräch",
+  "Contact_Subtitle": "",
+  "Contact_Form_RequiredField": "Bitte füllen Sie dieses Pflichtfeld aus",
+  "Contact_Form_PleaseEnterValidEmail": "Bitte geben Sie eine gültige E-Mail ein",
+  "Contact_Form_YourName": "Ihr Name",
+  "Contact_Form_YourEmail": "Ihre Email",
+  "Contact_Form_Subject": "Betreff",
+  "Contact_Form_Message": "Ihre Nachricht",
+  "Contact_Form_Button": "Nachricht senden",
+
+  "Footer_Title": "Senzoro",
+  "Footer_Impressum": "Senzoro ist ein schnell wachsendes Unternehmen, dass durch die Kombination von künstlicher Intelligenz, maschinelles Lernen und Smartphone Hardware einen neuartigen Ansatz zur Erfassung von Maschinenlaufzeiten entwickelt hat.",
+
+  "404_Title": "404",
+  "404_Message": "Du bist gerade auf eine Route gestoßen, die es nicht gibt....sehr traurig.",
+
+  "ThankYou_Title": "Ihre Nachricht wurde gesendet.",
+  "ThankYou_Message": "Vielen Dank, dass Sie Senzoro kontaktiert haben. Wir melden uns so rasch wie möglich."
+}

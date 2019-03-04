@@ -1,34 +1,61 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+import LanguageSelector from './languageSelector';
 
-const Header = ({ siteTitle }) => (
-  <header id="header" class="header header-hide">
-    <div class="container">
+import { Link, withIntl } from '../i18n';
 
-      <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">{siteTitle}</a></h1>
+const SenzoroLogo = require('../images/identity/vf_Logo_grey text below_transparent.svg');
+const SenzoroName = require('../images/identity/vf_Logo_grey text_side by side_white bg.svg');
+
+const Header = ({ t, pageContext }) => (
+  <header id="header" className="header header-hide scroll-header">
+    <div className="container" style={{ textAlign: 'center' }}>
+      <div className="logo pull-left large">
+        <h1>
+          <Link to="/" className="scrollto">
+            <img alt="Senzoro" height={80} src={SenzoroLogo} />
+          </Link>
+        </h1>
       </div>
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Home</a></li>
-          <li><a href="#get-started">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <div className="logo pull-left small">
+        <h1>
+          <Link to="/" className="scrollto">
+            <img alt="Senzoro" height={40} src={SenzoroName} />
+          </Link>
+        </h1>
+      </div>
+      <nav id="nav-lang-container" className="nav-menu-container">
+        <ul className="nav-menu">
+          <LanguageSelector
+            originalPath={(pageContext && pageContext.originalPath) || '/'}
+          />
+        </ul>
+      </nav>
+      <nav id="nav-menu-container" className="nav-menu-container">
+        <ul className="nav-menu">
+          <li>
+            <Link to="#hero">{t('Header_Link_Home')}</Link>
+          </li>
+          <li>
+            <Link to="#get-started">{t('Header_Link_About')}</Link>
+          </li>
+          <li>
+            <Link to="#features">{t('Header_Link_Features')}</Link>
+          </li>
+          <li>
+            <Link to="#team">{t('Header_Link_Team')}</Link>
+          </li>
+          <li>
+            <Link to="#contact">{t('Header_Link_Contact')}</Link>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
-)
+);
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  t: PropTypes.func.isRequired,
+};
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default withIntl()(Header);
