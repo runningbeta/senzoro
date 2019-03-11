@@ -125,7 +125,9 @@ class Contact extends React.Component {
       showValidation,
       isValid,
     } = this.state;
-    const gRecaptchaSuccess = gRecaptchaResponse && gRecaptchaResponse.success;
+    // TODO: Check and verify gRecaptchaResponse with Google servers
+    // https://developers.google.com/recaptcha/docs/verify
+    const gRecaptchaSuccess = !!gRecaptchaResponse;
 
     return (
       <section id="contact" className="padd-section wow fadeInUp">

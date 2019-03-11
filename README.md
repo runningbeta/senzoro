@@ -15,7 +15,7 @@ environment variables to your site’s Settings > Build & deploy > Build environ
   - `SITE_RECAPTCHA_SECRET` with your reCAPTCHA secret key.
 3. Change the build command for your site to
 ```
-echo SITE_RECAPTCHA_KEY=$GATSBY_SITE_RECAPTCHA_KEY >> .env.production && gatsby build
+echo -e GATSBY_SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY\nGATSBY_SITE_RECAPTCHA_SECRET=$SITE_RECAPTCHA_SECRET >> .env.production && gatsby build
 ```
 _Note: There’s probably a more elegant way to make the `SITE_RECAPTCHA_KEY` environment variable available to Gatsby in production. This was just the quickest way I found to make it work without having to duplicate the variable_
 
