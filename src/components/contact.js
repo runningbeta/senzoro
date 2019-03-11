@@ -99,13 +99,22 @@ class Contact extends React.Component {
     });
     if (!isEmpty(errors)) return;
 
+    const { name, email, subject, message, gRecaptchaResponse } = this.state;
+    const formData = {
+      name,
+      email,
+      subject,
+      message,
+      'g-recaptcha-response': gRecaptchaResponse,
+    };
+
     const form = e.target;
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        ...this.state,
+        ...formData,
       }),
     })
       .then(() => {
