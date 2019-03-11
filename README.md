@@ -1,7 +1,7 @@
 
 # 🚀 Senzoro Landing Page
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4be940c6-efa4-4517-a335-2017c1c5f4a7/deploy-status)](https://app.netlify.com/sites/senzoro-landing/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c9b9cde6-d8fe-4187-909a-c724e0118a29/deploy-status)](https://app.netlify.com/sites/senzoro-landing/deploys)
 
 ## reCAPTCHA
 
